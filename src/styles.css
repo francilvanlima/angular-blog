@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Usando o asterisco significa que o valor da cor ser atribuído a todo o documento.
+Essa configuração reseta o css padrão que vem em diversos navegadores.
+*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #111111;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}

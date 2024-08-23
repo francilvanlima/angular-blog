@@ -1,0 +1,18 @@
+.container___menu-bar > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.container___menu-bar > ul > li {
+  margin-right: 20px;
+  list-style: none;
+}
+
+a {
+  list-style: none;
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+}
