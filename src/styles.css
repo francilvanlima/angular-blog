@@ -13,6 +13,10 @@ Essa configuração reseta o css padrão que vem em diversos navegadores.
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body {
+  background-color: #111111 !important;
+}
+
 a {
   text-decoration: none;
 }

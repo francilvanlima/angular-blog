@@ -1,14 +1,12 @@
 <div class="container__big-card">
   <div class="big-card__photo">
     <!-- Mockado/Travado -> mock = conteúdo travado não vai tá dinamico -->
-    <img src="https://th.bing.com/th/id/OIP.nucg2Gm3JxCPauSelRdx_gHaE6?rs=1&pid=ImgDetMain" alt="">
+    <img src="{{ photoCover }}" alt="">
   </div>
   <div class="big-card__title">
-    <h1><a href="">NOVA VERSÃO DO ANGULAR</a></h1>
+    <h1><a [routerLink]="['/noticia', Id]" class="text-uppercase">{{ cardTitle }}</a></h1>
   </div>
   <div class="big-card__description">
-    <p><a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur in, officia tenetur, magni qui itaque,
-      molestias labore maxime iusto voluptatem blanditiis quasi minima rem numquam quaerat doloribus voluptate aliquam
-      error?</a></p>
+    <p><a [routerLink]="['/noticia', Id]"> {{ cardDescription }} </a></p>
   </div>
 </div>
