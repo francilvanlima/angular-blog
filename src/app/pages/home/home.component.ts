@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { dataFake } from '../../data/dataFake';
 
 @Component({
   selector: 'app-home',
@@ -7,8 +8,12 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
-  constructor() {}
+  dadosBanco = new Array();
 
-  ngOnInit(){}
+  constructor() { }
+
+  ngOnInit() {
+    this.dadosBanco = dataFake.filter(item => item.id >= '2');
+  }
 
 }

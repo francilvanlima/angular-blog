@@ -17,41 +17,13 @@
       </div>
       <div class="col-12 col-sm-12 col-md-7">
         <div class="articles__others">
-          <app-small-card
-            Id="2"
-            photoCover="https://th.bing.com/th/id/R.97bf524f526ff02909b2995b7792068a?rik=tmOy9%2flkFKXORg&pid=ImgRaw&r=0"
-            cardTitle="Queimadas na Amazônia"
-          >
-          </app-small-card>
-          <app-small-card
-            Id="3"
-            photoCover="https://media.istockphoto.com/photos/amazon-rainforest-sunset-panorama-picture-id1255309715?k=20&m=1255309715&w=0&h=8vPahzapHtWo4S3Hnxlaqe8C2nzJY9pdyNZ0V45CMT4="
-            cardTitle="Amazônia é vida"
-          >
-          </app-small-card>
-          <app-small-card
-            Id="4"
-            photoCover="https://www.infoescola.com/wp-content/uploads/2020/01/clima-amazonas-1522090490.jpg"
-            cardTitle="Precisamos da Amazônia"
+          <app-small-card *ngFor="let item of dadosBanco"
+            Id="{{item.Id}}"
+            photoCover="{{item.photoCover}}"
+            cardTitle="{{item.title}}"
           >
           </app-small-card>
         </div>
       </div>
     </div>
 </div>
-<!-- <div class="container">
-  <div class="container__articles">
-    <div class="col-5 col-sm-12 col-md-5">
-      <div class="articles__main">
-        <app-big-card></app-big-card>
-      </div>
-    </div>
-    <div class="col-7 col-sm-12 col-md-7">
-      <div class="articles__others">
-        <app-small-card></app-small-card>
-        <app-small-card></app-small-card>
-        <app-small-card></app-small-card>
-      </div>
-    </div>
-  </div>
-</div> -->
